@@ -1,81 +1,111 @@
 a=63837373
 b=363773
-toplama=a+b
-print(toplama)
+addition=a+b
+print(addition)
+
 a=63837373
 b=363773
-çıkarma=a-b
-print(çıkarma)
+subtraction=a-b
+print(subtraction)
+
 a=63837373
 b=363773
-çarpma=a*b
-print(çarpma)
+multiplication=a*b
+print(multiplication)
+
 a=63837373
 b=363773
-bölme=a/b
-print(bölme)
-#çarpma bolme toplma cikarma islerinde tirnak isareti kullanilmaz
-yusuf=input("ismin nedir")
-print("merhaba yusuf seviliyosun")
-#input isleminde ismi sehri sonuc kisminda giriceksin bukadar 
+division=a/b
+print(division)
+
+Do not use quotation marks in multiplication, division, addition, and subtraction operations
+
+yusuf=input("What is your name?")
+print("Hello Yusuf, you are loved")
+
+In input operations, enter the name, city, or result in the input section
+
 a=38
 b=3
 mod=a%b
-print("kalan:", mod)
+print("remainder:", mod)
+
 a=45
 b=23
-tam_bölüm=a //  b
-print("tam bölüm:" , tam_bölüm)
-#tam bolum kisminda bolme cizgileri aradinda bosluk bırakma
+floor_division=a // b
+print("floor division:", floor_division)
+
+Do not leave spaces between the floor division slashes
+
 a=48
 b=20
-üs=a**b
-print("üs:" , üs)
-# bu islem iki sayinin usleri almasini saglar
-sayı1=int(input("birinci sayıyı gir:") )
-sayı2=int(input("ikinci sayıyı gir:") )
-toplam = sayı1+sayı2
-çıkarma=sayı1-sayı2
-çarpma=sayı1*sayı2
-bölme=sayı1/sayı2
-tambölme= sayı1 // sayı2
-üs= sayı1**sayı2
-mod=sayı1%sayı2
-print("toplam:" , toplam)
-print("çıkarma:" , çıkarma)
-print("çarpma:" , çarpma)
-print("bölme:" , bölme)
-print("tambölme:" , tambölme)
-print("üs:" , üs)
-print("mod:" , mod)
-# ilk hesap makinesi programim
-isim="yusuf"
-soyad="karadağ"
-boy=180
-kilo=65
-el=15.8
+power=a**b
+print("power:", power)
+
+This operation calculates powers of numbers
+
+number1=int(input("Enter the first number: "))
+number2=int(input("Enter the second number: "))
+
+addition=number1+number2
+subtraction=number1-number2
+multiplication=number1*number2
+division=number1/number2
+floor_division=number1 // number2
+power=number1**number2
+mod=number1%number2
+
+print("addition:", addition)
+print("subtraction:", subtraction)
+print("multiplication:", multiplication)
+print("division:", division)
+print("floor division:", floor_division)
+print("power:", power)
+print("mod:", mod)
+
+My first calculator program
+
+name="yusuf"
+surname="karadag"
+height=180
+weight=65
+hand=15.8
 a=True
-print(type(isim))
-print(type(soyad))
-print(type(boy))
-print(type(kilo))
-print(type(el))
+
+print(type(name))
+print(type(surname))
+print(type(height))
+print(type(weight))
+print(type(hand))
 print(type(a))
-#int =tam sayilar bool= dogru veya yanliş str merhaba gibi sozcukler  float ise ondalikli sayilardir
+
+int = whole numbers
+
+bool = true or false
+
+str = text such as "hello"
+
+float = decimal numbers
+
 x=17
+
 if x>=18:
-	print("ehliyet alabiliyor")
-else: 
-	print(" ehliyet alamiyor")
+print("Can get a driver's license")
+else:
+print("Cannot get a driver's license")
+
 a=80
+
 if a>80:
-	print("gecti")
+print("Passed")
 elif a<80:
-	print("kaldı")
+print("Failed")
 else:
-	print("sınırda gecti")
-sayı=int(input("bir sayı gir:  "))
-if sayı % 2 == 0:
-	print("oluyor")
+print("Passed at the limit")
+
+number=int(input("Enter a number: "))
+
+if number % 2 == 0:
+print("Even")
 else:
-	print("olmuyor")
+print("Odd")
