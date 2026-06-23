@@ -1,0 +1,81 @@
+a=63837373
+b=363773
+toplama=a+b
+print(toplama)
+a=63837373
+b=363773
+çıkarma=a-b
+print(çıkarma)
+a=63837373
+b=363773
+çarpma=a*b
+print(çarpma)
+a=63837373
+b=363773
+bölme=a/b
+print(bölme)
+#çarpma bolme toplma cikarma islerinde tirnak isareti kullanilmaz
+yusuf=input("ismin nedir")
+print("merhaba yusuf seviliyosun")
+#input isleminde ismi sehri sonuc kisminda giriceksin bukadar 
+a=38
+b=3
+mod=a%b
+print("kalan:", mod)
+a=45
+b=23
+tam_bölüm=a //  b
+print("tam bölüm:" , tam_bölüm)
+#tam bolum kisminda bolme cizgileri aradinda bosluk bırakma
+a=48
+b=20
+üs=a**b
+print("üs:" , üs)
+# bu islem iki sayinin usleri almasini saglar
+sayı1=int(input("birinci sayıyı gir:") )
+sayı2=int(input("ikinci sayıyı gir:") )
+toplam = sayı1+sayı2
+çıkarma=sayı1-sayı2
+çarpma=sayı1*sayı2
+bölme=sayı1/sayı2
+tambölme= sayı1 // sayı2
+üs= sayı1**sayı2
+mod=sayı1%sayı2
+print("toplam:" , toplam)
+print("çıkarma:" , çıkarma)
+print("çarpma:" , çarpma)
+print("bölme:" , bölme)
+print("tambölme:" , tambölme)
+print("üs:" , üs)
+print("mod:" , mod)
+# ilk hesap makinesi programim
+isim="yusuf"
+soyad="karadağ"
+boy=180
+kilo=65
+el=15.8
+a=True
+print(type(isim))
+print(type(soyad))
+print(type(boy))
+print(type(kilo))
+print(type(el))
+print(type(a))
+#int =tam sayilar bool= dogru veya yanliş str merhaba gibi sozcukler  float ise ondalikli sayilardir
+x=17
+if x>=18:
+	print("ehliyet alabiliyor")
+else: 
+	print(" ehliyet alamiyor")
+a=80
+if a>80:
+	print("gecti")
+elif a<80:
+	print("kaldı")
+else:
+	print("sınırda gecti")
+sayı=int(input("bir sayı gir:  "))
+if sayı % 2 == 0:
+	print("oluyor")
+else:
+	print("olmuyor")
