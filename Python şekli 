@@ -109,3 +109,160 @@ if number % 2 == 0:
 print("Even")
 else:
 print("Odd")
+# ========================================
+# FOR LOOP EXAMPLES
+# ========================================
+
+# 1. Print numbers in order
+print("\n--- Numbers from 1 to 10 ---")
+for i in range(1, 11):
+    print(i, end=" ")
+print()
+
+# 2. Print even numbers
+print("\n--- Even numbers from 1 to 20 ---")
+for i in range(2, 21, 2):
+    print(i, end=" ")
+print()
+
+# 3. Print items in a list
+print("\n--- Students in the class ---")
+students = ["Yusuf", "Ahmet", "Mehmet", "Ayse", "Fatma"]
+
+for student in students:
+    print("Hello,", student)
+
+# 4. Sum of numbers from 1 to 10
+print("\n--- Sum of numbers from 1 to 10 ---")
+total = 0
+
+for i in range(1, 11):
+    total = total + i
+
+print("Total:", total)
+
+# 5. Multiplication table
+print("\n--- Multiplication table of 5 ---")
+
+for i in range(1, 11):
+    print("5 x", i, "=", 5 * i)
+
+# 6. Print letters of a word
+print("\n--- Letters of the word 'YUSUF' ---")
+
+for letter in "YUSUF":
+    print(letter)
+
+# 7. Print squares of numbers
+print("\n--- Squares of numbers ---")
+
+numbers = [1, 2, 3, 4, 5]
+
+for number in numbers:
+    print(number, "squared is:", number ** 2)
+
+# 8. Count up to a user-entered number
+print("\n--- For loop with user input ---")
+
+n = int(input("How far should I count? "))
+
+for i in range(1, n + 1):
+    print(i, end=" ")
+
+print()
+
+# ========================================
+# WHILE LOOP EXAMPLES
+# ========================================
+
+# 1. Count from 1 to 5
+print("\n--- Counting from 1 to 5 with while ---")
+
+counter = 1
+
+while counter <= 5:
+    print(counter, end=" ")
+    counter = counter + 1
+
+print()
+
+# 2. Countdown
+print("\n--- Countdown ---")
+
+counter = 10
+
+while counter >= 1:
+    print(counter, end=" ")
+    counter = counter - 1
+
+print("Start!")
+
+# 3. Guessing game
+print("\n--- Guessing Game ---")
+
+secret_number = 42
+guess = 0
+
+while guess != secret_number:
+    guess = int(input("Guess my number (1-100): "))
+
+    if guess < secret_number:
+        print("Try a bigger number!")
+    elif guess > secret_number:
+        print("Try a smaller number!")
+
+print("Congratulations! You guessed it. The number was", secret_number)
+
+# 4. Continue until user types exit
+print("\n--- Infinite loop and break ---")
+
+while True:
+    message = input("Type something ('exit' to stop): ")
+
+    if message == "exit":
+        print("Exiting program...")
+        break
+
+    print("You typed:", message)
+
+# 5. Factorial calculation
+print("\n--- Factorial Calculation ---")
+
+n = int(input("Enter a number: "))
+
+factorial = 1
+i = 1
+
+while i <= n:
+    factorial = factorial * i
+    i = i + 1
+
+print(n, "! =", factorial)
+
+# 6. Sum of digits
+print("\n--- Sum of Digits ---")
+
+number = int(input("Enter a number: "))
+total = 0
+
+while number > 0:
+    digit = number % 10
+    total = total + digit
+    number = number // 10
+
+print("Sum of digits:", total)
+
+# 7. Continue example
+print("\n--- Numbers from 1 to 15 except multiples of 3 ---")
+
+i = 1
+
+while i <= 15:
+    if i % 3 == 0:
+        i = i + 1
+        continue
+
+    print(i, end=" ")
+    i = i + 1
+
+print()
