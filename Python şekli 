@@ -266,3 +266,93 @@ while i <= 15:
     i = i + 1
 
 print()
+numbers = [5, 2, 8, 1, 9, 3]
+
+# Get a sorted copy (original unchanged)
+sorted_nums = sorted(numbers)
+print(sorted_nums)  # [1, 2, 3, 5, 8, 9]
+print(numbers)      # [5, 2, 8, 1, 9, 3]  ← unchanged
+
+# Sort in place (original is modified)
+numbers.sort()
+print(numbers)      # [1, 2, 3, 5, 8, 9]
+
+# Sort in descending order
+numbers.sort(reverse=True)
+print(numbers)      # [9, 8, 5, 3, 2, 1]
+
+# Reverse the order
+numbers.reverse()
+print(numbers)
+
+# Sort strings by length
+words = ["banana", "apple", "watermelon", "grape"]
+words.sort(key=len)
+print(words)  # ['apple', 'grape', 'banana', 'watermelon']colors = ["red", "green", "blue"]
+
+# Basic for loop
+for color in colors:
+    print(color)
+
+# With index using enumerate
+for i, color in enumerate(colors):
+    print(f"{i}. {color}")
+# 0. red
+# 1. green
+# 2. blue
+
+# Loop two lists simultaneously with zip
+names = ["Alice", "Bob", "Charlie"]
+ages  = [25, 30, 22]
+for name, age in zip(names, ages):
+    print(f"{name} is {age} years old")# Squares of numbers 0–9
+squares = [x**2 for x in range(10)]
+print(squares)  # [0, 1, 4, 9, 16, 25, 36, 49, 64, 81]
+
+# Squares of even numbers only
+even_squares = [x**2 for x in range(10) if x % 2 == 0]
+print(even_squares)  # [0, 4, 16, 36, 64]
+
+# Convert to uppercase
+fruits = ["apple", "pear", "banana"]
+upper = [f.upper() for f in fruits]
+print(upper)  # ['APPLE', 'PEAR', 'BANANA']
+
+# Nested comprehension (multiplication table)
+table = [i * j for i in range(1, 4) for j in range(1, 4)]
+print(table)  # [1, 2, 3, 2, 4, 6, 3, 6, 9]2numbers = [3, 1, 4, 1, 5, 9, 2, 6]
+
+print(len(numbers))              # 8     → number of elements
+print(max(numbers))              # 9     → largest element
+print(min(numbers))              # 1     → smallest element
+print(sum(numbers))              # 31    → total sum
+print(any([False, False, True])) # True  → is at least one True?
+print(all([True, True, True]))   # True  → are all True?# ─── Create ──────────────────────────────────────────
+students = ["Alice", "Bob", "Charlie", "Diana"]
+scores   = [88, 72, 95, 60]
+
+# ─── Add ─────────────────────────────────────────────
+students.append("Eve")
+scores.append(85)
+
+# ─── Sort by score (zip then sort) ───────────────────
+combined = list(zip(scores, students))
+combined.sort(reverse=True)
+
+# ─── Display ranking ─────────────────────────────────
+print("=== Leaderboard ===")
+for rank, (score, name) in enumerate(combined, start=1):
+    print(f"{rank}. {name:10s} → {score}")
+
+# ─── List comprehension: pass/fail ───────────────────
+passed = [name for score, name in combined if score >= 75]
+failed = [name for score, name in combined if score < 75]
+
+print(f"\nPassed : {passed}")
+print(f"Failed : {failed}")
+
+# ─── Stats ───────────────────────────────────────────
+all_scores = [s for s, _ in combined]
+print(f"\nHighest : {max(all_scores)}")
+print(f"Lowest  : {min(all_scores)}")
+print(f"Average : {sum(all_scores) / len(all_scores):.1f}")
